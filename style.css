@@ -1,0 +1,65 @@
+:root {
+    --color-primary: #203956;
+    --color-secondary: #673f22;
+    --color-steel: #aabed8;
+    --color-gold: #b39530;
+    --color-black: #030200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+}
+
+body {
+    width: 1200px;
+    max-width: 90%;
+    margin: auto;
+}
+
+header {
+
+    width: 100%;
+    margin: auto;
+    background-color: var(--color-secondary);
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.levy-panel {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-silver);
+    padding: 2em;
+    text-align: center;
+
+}
+
+.pravy-panel {
+
+    padding: 2em;
+}
+
+.uvod-foto {
+    width: 100%;
+
+
+
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-primary);
+}
