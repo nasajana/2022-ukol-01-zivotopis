@@ -1,6 +1,6 @@
 :root {
-    --color-primary: #203956;
-    --color-secondary: #673f22;
+    --color-primary: #0b6447;
+    --color-secondary: #e99d00;
     --color-steel: #aabed8;
     --color-gold: #b39530;
     --color-black: #030200;
@@ -10,14 +10,39 @@
 }
 
 body {
-    width: 1200px;
-    max-width: 90%;
+    max-width: 1200px;
     margin: auto;
+  
 }
 
 
-h1,
-h2,
-h3 {
-    color: var(--color-primary);
+.oddil {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* roztahuje na šířku*/
+  .oddil>* {
+    flex: 1 100%;
+  }
+/*hodí pod sebe*/
+@media all and (min-width: 600px) {
+    .box-1 {
+      flex: 1 0 0;
+    }
+  }
+  
+  @media all and (min-width: 900px) {
+    .box-2 {
+      flex: 1 0 0;
+    }
+  }
+
+
+
+.foto{
+    width: 100%;
+    height: auto;
+    border-radius: 0 20% 50% 0;
 }
