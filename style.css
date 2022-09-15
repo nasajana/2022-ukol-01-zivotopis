@@ -1,48 +1,129 @@
 :root {
-    --color-primary: #0b6447;
-    --color-secondary: #e99d00;
-    --color-steel: #aabed8;
-    --color-gold: #b39530;
-    --color-black: #030200;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+  --color-primary: #0b6447;
+  --color-secondary: #e99d00;
+  --color-steel: #aabed8;
+  --color-gold: #b39530;
+  --color-black: #030200;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 
 }
 
 body {
-    max-width: 1200px;
-    margin: auto;
-  
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+header,
+footer {
+  background-color: silver;
+  text-align: center;
+  font-size: small;
+}
+
+.oddil {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.box-1,
+.box-2 {
+  padding: 1.5em;
+}
+
+.kontakt {
+  flex-direction: column;
+  justify-content: center;
+  font-size: large;
+}
+
+.kontakt>* {
+  margin-bottom: 0px;
+}
+
+h1,
+h2 {
+  color: var(--color-primary);
+}
+
+h2:after {
+  content: '';
+  display: block;
+  height: 10px;
+  width: 5em;
+  margin: 5px 0;
+  border-radius: 200% 90% 180% 100%;
+  background: var(--color-secondary);
 }
 
 
-.oddil {
-    display: flex;
-    flex-flow: row wrap;
-    font-weight: bold;
-    text-align: center;
-  }
-  /* roztahuje na šířku*/
-  .oddil>* {
-    flex: 1 100%;
-  }
+/* roztahuje na šířku*/
+.oddil>* {
+  flex: 1 100%;
+
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  border-radius: 50% 50% 100% 50%;
+  box-shadow: 4px 4px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+table {
+  border:1px solid #b3b3b3;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th{
+  padding: 0.5em;
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+ }
+
+/* společné */
+.d-flex {
+  display: flex;
+}
+
+.pad-1 {
+  padding: 1em;
+}
+
+.pad-2 {
+  padding: 2em;
+}
+
+.cent-text {
+  text-align: center;
+}
+
+.bg-sec {
+  background-color: var(--color-secondary);
+}
+
+.patvar {
+  border-radius: 200% 90% 180% 100%;
+  box-shadow: 4px 4px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
 /*hodí pod sebe*/
 @media all and (min-width: 600px) {
-    .box-1 {
-      flex: 1 0 0;
-    }
+  .box-1 {
+    flex: 1 0 0;
   }
-  
-  @media all and (min-width: 900px) {
-    .box-2 {
-      flex: 1 0 0;
-    }
+}
+
+@media all and (min-width: 900px) {
+  .box-2 {
+    flex: 1 0 0;
   }
-
-
-
-.foto{
-    width: 100%;
-    height: auto;
-    border-radius: 0 20% 50% 0;
 }
